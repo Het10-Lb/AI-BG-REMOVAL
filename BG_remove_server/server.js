@@ -2,8 +2,7 @@ import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
-import connectDB from './db.js';
-// import { removeServer } from './removeServer.js';
+import connectDB from './configs/mongodb.js';
 
 //APP CONFIG
 const PORT = process.env.PORT || 3000;
@@ -18,6 +17,8 @@ app.listen(PORT, () => {
 
 await connectDB();
 
-app.get('/', (req, res) => {
-  res.send('Hello World');
-});
+
+// API routes
+app.get('/',(req,res) => res.send("API Working for Clear Bg"))
+
+
