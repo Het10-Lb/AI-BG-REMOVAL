@@ -2,7 +2,7 @@
 
 // http://localhost:3000/api/user/webhooks
 import { Webhook } from "svix";
-import userModel from "../models/userModel.js";
+import userModel from "../models/user.model.js";
 
 const clerkWebhooks = async (req, res) => {
 	try {
