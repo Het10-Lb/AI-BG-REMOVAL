@@ -2,6 +2,7 @@ import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
+import userRouter from './routes/userRouter.js';
 import connectDB from './configs/mongodb.js';
 
 //APP CONFIG
@@ -20,5 +21,5 @@ await connectDB();
 
 // API routes
 app.get('/',(req,res) => res.send("API Working for Clear Bg"))
-
+app.use('/api/user',userRouter ); 
 
