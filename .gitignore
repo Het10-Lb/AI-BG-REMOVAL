@@ -1,0 +1,42 @@
+node_modules/
+
+# Dependencies and build output
+**/node_modules/
+BG_remove_client/dist/
+BG_remove_client/.vite/
+BG_remove_server/dist/
+BG_remove_server/build/
+
+# Environment files
+.env
+.env.*
+**/.env
+**/.env.*
+!.env.example
+!.env.sample
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Coverage and cache
+coverage/
+**/coverage/
+.cache/
+**/.cache/
+tmp/
+temp/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+
+
