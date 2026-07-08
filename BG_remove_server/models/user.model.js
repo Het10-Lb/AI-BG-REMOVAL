@@ -13,22 +13,24 @@ const userSchema = new mongoose.Schema({
     },
     photo:{
         type: String,
-        required: true
+        required: false,
     },
     firstName: {
         type: String,
-        required: true
+        required: false 
+
     },
     lastName: {
         type: String,
-        required: true
+        required: false
     },
     creditBalance: {
         type: Number,
-        required: true,
-        default: 10
+        required: false,
+        default: 2
     },
 });
+
 
 const UserModel = mongoose.models.user || mongoose.model('User', userSchema) ;
 
