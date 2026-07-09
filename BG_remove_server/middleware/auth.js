@@ -10,7 +10,7 @@ const authUser = async (req,res, next)=>{
        }
 
        const token_decode = jwt.decode(token)
-       console.log(token_decode);
+    //    console.log(token_decode);
        
        req.clerkId = token_decode.clerkId
        next()
